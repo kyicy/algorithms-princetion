@@ -36,3 +36,12 @@ application {
     // Define the main class for the application.
     mainClassName = 'App'
 }
+
+
+apply plugin: 'java'
+test {
+    testLogging {
+        outputs.upToDateWhen {false}
+        showStandardStreams = true
+    }
+}
